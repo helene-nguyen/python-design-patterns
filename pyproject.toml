@@ -1,6 +1,21 @@
 [project]
-# Support Python 3.10+.
-requires-python = ">=3.10"
+name = "python-design-patterns"
+version = "0.1.0"
+description = "Common design patterns written in Python"
+authors = [
+    {name = "Helene Nguyen", email = "helene.dyn.nguyen@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+]
+
+[tool.poetry]
+# Use Poetry only for dependency management but not for packaging
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.9"
 
 [tool.ruff]
 # Set the maximum line length to 79.
